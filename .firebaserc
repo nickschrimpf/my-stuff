@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ionic-my-stuff"
+  },
+  "targets": {
+    "ionic-my-stuff": {
+      "hosting": {
+        "app": [
+          "ionic-my-stuff"
+        ]
+      }
+    }
+  }
+}
