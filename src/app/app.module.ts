@@ -23,12 +23,12 @@ import { provideStorage,getStorage, connectStorageEmulator } from '@angular/fire
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => {
       let auth:Auth;
-      if(environment.production){
+      // if(environment.production){
         auth = getAuth()
-      }else{
-        auth = initializeAuth(getApp(),{})
-        connectAuthEmulator(auth,'http://127.0.0.1:9099')
-      }
+      // }else{
+      //   auth = initializeAuth(getApp(),{})
+      //   connectAuthEmulator(auth,'http://127.0.0.1:9099')
+      // }
       return auth
     }),
     provideFirestore(() => {

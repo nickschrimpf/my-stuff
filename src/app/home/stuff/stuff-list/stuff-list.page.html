@@ -1,0 +1,5 @@
+<ion-content>
+  <ion-list *ngFor="let stuff of stuffList|async">
+    <app-stuff-item [stuffItem]="stuff"></app-stuff-item>
+  </ion-list>
+</ion-content>
